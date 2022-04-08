@@ -1,4 +1,4 @@
-package com.company;
+package manavPackage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,13 +25,13 @@ public class Main {
         System.out.println("Lutfen almak isteginiz urunun kodunu giriniz...");
         System.out.println();
         System.out.println(
-                "Ürün\t\tFiyat\t\tÜrün Kodu\n" +
-                        "===================================\n" +
-                        "Elma\t\t5TL\t\t\t1\n" +
-                        "Armut\t\t5TL\t\t\t2\n" +
-                        "Portakal\t8TL\t\t\t3\n" +
-                        "Mandalina\t8TL\t\t\t4\n" +
-                        "Muz\t\t\t15TL\t\t5");
+                "Ürün\t\t\tFiyat\t\t\tÜrün Kodu\n" +
+                        "==================================================\n" +
+                        "Elma\t\t\t5 TL\t\t\t\t1\n" +
+                        "Armut\t\t\t5 TL\t\t\t\t2\n" +
+                        "Portakal\t\t8 TL\t\t\t\t3\n" +
+                        "Mandalina\t\t8 TL\t\t\t\t4\n" +
+                        "Muz\t\t\t\t15 TL\t\t\t\t5\n");
 
         fiyatList.add(5);
         fiyatList.add(5);
@@ -59,7 +59,7 @@ public class Main {
                         kgList.add(miktar);
                     } else {
                         for (int i = 0; i < urunList.size(); i++) {
-                            if (urunList.get(i) == "Elma") {
+                            if (urunList.get(i).equals("Elma")) {
                                 kgList.set(i, kgList.get(i) + miktar);
                             }
                         }
@@ -75,7 +75,7 @@ public class Main {
                         kgList.add(miktar);
                     } else {
                         for (int i = 0; i < urunList.size(); i++) {
-                            if (urunList.get(i) == "Armut") {
+                            if (urunList.get(i).equals("Armut")) {
                                 kgList.set(i, kgList.get(i) + miktar);
                             }
                         }
@@ -92,7 +92,7 @@ public class Main {
                         kgList.add(miktar);
                     } else {
                         for (int i = 0; i < urunList.size(); i++) {
-                            if (urunList.get(i) == "Portakal") {
+                            if (urunList.get(i).equals("Portakal")) {
                                 kgList.set(i, kgList.get(i) + miktar);
                             }
                         }
@@ -108,7 +108,7 @@ public class Main {
                         kgList.add(miktar);
                     } else {
                         for (int i = 0; i < urunList.size(); i++) {
-                            if (urunList.get(i) == "Mandalina") {
+                            if (urunList.get(i).equals("Mandalina")) {
                                 kgList.set(i, kgList.get(i) + miktar);
                             }
                         }
@@ -124,7 +124,7 @@ public class Main {
                         kgList.add(miktar);
                     } else {
                         for (int i = 0; i < urunList.size(); i++) {
-                            if (urunList.get(i) == "Muz") {
+                            if (urunList.get(i).equals("Elma")) {
                                 kgList.set(i, kgList.get(i) + miktar);
                             }
                         }
@@ -141,6 +141,7 @@ public class Main {
         for (int i = 0; i < urunList.size(); i++) {
             System.out.println(urunList.get(i) + " : " + kgList.get(i) + "kg. \t" + fiyatList.get(i) * kgList.get(i) + " TL ");
         }
+        System.out.println();
         System.out.println("Alisveris tutari = " + tutar + " TL. İyi günler");
     }
 }
