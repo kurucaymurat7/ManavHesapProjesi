@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Lutfen almak isteginiz urunun kodunu giriniz...");
         System.out.println();
         System.out.println(
-                "Ürün\t\t\tFiyat\t\t\tÜrün Kodu\n" +
+                        "Ürün\t\t\tFiyat\t\t\tÜrün Kodu\n" +
                         "==================================================\n" +
                         "Elma\t\t\t5 TL\t\t\t\t1\n" +
                         "Armut\t\t\t5 TL\t\t\t\t2\n" +
@@ -124,7 +124,7 @@ public class Main {
                         kgList.add(miktar);
                     } else {
                         for (int i = 0; i < urunList.size(); i++) {
-                            if (urunList.get(i).equals("Elma")) {
+                            if (urunList.get(i).equals("Muz")) {
                                 kgList.set(i, kgList.get(i) + miktar);
                             }
                         }
